@@ -115,6 +115,5 @@ print "Subject: ", subject
 print "Message: ", message
 print "Email:", email
 req = br.submit()
-print(">>>>>DONE")
+print("DONE")
 
-print('CHeck your inbox bitch')
