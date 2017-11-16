@@ -15,6 +15,7 @@ ______                 _____  ___  ___  ___  _ _
 """)
 print ("You Don't Have Server")
 print ("Buy One http://deep3.club/buy.php")
+print ("Contact Me: fb.me/dzmanisso")
 site= raw_input("Server-> ")
 print " ", site
 
