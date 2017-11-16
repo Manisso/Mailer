@@ -1,3 +1,5 @@
+#!/bin/bash
+clear
 pip install mechanize
 pip install requests
 pip install os
@@ -7,8 +9,7 @@ clear
 rm -R "/usr/share/doc/Mailer"
 
 
-sudo cd /usr/share/doc/
-sudo git clone https://github.com/Manisso/Mailer.git
+sudo sudo git clone https://github.com/Manisso/Mailer.git /usr/share/doc/Mailer;
 
 echo "#!/bin/bash 
  python /usr/share/doc/Mailer/inbox.py" '${1+"$@"}' > inbox;
