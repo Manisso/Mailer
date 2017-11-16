@@ -2,16 +2,17 @@ pip install mechanize
 pip install requests
 pip install os
 
-if [ -d "/usr/share/doc/fsociety" ] ;
+clear
+
+if [ -d "/usr/share/doc/Mailer" ] ;
 then
-rm -R "/usr/share/doc/fsociety"
+rm -R "/usr/share/doc/Mailer"
 else
  exit
 fi
-fi
 
-cd /usr/share/doc/
-git clone https://github.com/Manisso/Mailer.git
+sudo cd /usr/share/doc/
+sudo git clone https://github.com/Manisso/Mailer.git
 
 echo "#!/bin/bash 
  python /usr/share/doc/Mailer/inbox.py" '${1+"$@"}' > inbox;
@@ -19,7 +20,7 @@ echo "#!/bin/bash
  sudo cp inbox /usr/bin/;
 rm inbox;
 
-if [ -d "/usr/share/doc/fsociety" ] ;
+if [ -d "/usr/share/doc/Mailer" ] ;
 then
 
 echo "[✔] ✔✔✔  All is done!! You can execute tool by typing inbox !   ✔✔✔ [✔]"; 
