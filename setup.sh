@@ -4,12 +4,8 @@ pip install os
 
 clear
 
-if [ -d "/usr/share/doc/Mailer" ] ;
-then
 rm -R "/usr/share/doc/Mailer"
-else
- exit
-fi
+
 
 sudo cd /usr/share/doc/
 sudo git clone https://github.com/Manisso/Mailer.git
